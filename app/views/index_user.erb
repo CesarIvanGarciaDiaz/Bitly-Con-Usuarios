@@ -1,0 +1,20 @@
+  <h1>Bienvenido a Bitly with User!</h1>
+  <p> BIENVENIDO A TU PÁGINA WEB </p>
+  <p>Elige la opcion que requieras:</p>
+
+  <p><%= session[:email] %> </p>
+  <p><%= session[:user_name] %> </p>
+  <p id="html"></p>
+
+  <form id="registro" action="/register_temp" method="get">
+    <br><input type="submit" value="Registrar!"> <br>
+
+  </form>
+
+  <form id="login" action="/login_temp" method="get">
+    <br><input type="submit" value="Login!"> <br>
+  </form>
+
+  <form id="crea_url_sin" action="/crear_url" method="get">
+    <br><input type="submit" value="CreaURL"> <br>
+  </form>

@@ -1,0 +1,17 @@
+<h2> Bienvenido a tu LOGIN! </h2>
+
+
+  <p id="html"></p>
+  <p style = "color:red" ><%= session[:error_message]%></p>
+
+  <form id="target" action="/login" method="post">
+   
+    Haz tu login!
+    <br>
+    <p>Mail</p><input type="email" name="Mail" ><br>
+    <p>Contraseña</p><input type="password" name="Contraseña" ><br>
+    <br>
+
+    <input type="submit" value="Login!"> <br>
+
+  </form>
